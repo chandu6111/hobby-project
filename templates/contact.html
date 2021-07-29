@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Hobby project</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="../static/assets/img/favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="../static/assets/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Andika&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    />
+    <link rel="stylesheet" href="../static/assets/fonts/font-awesome.min.css" />
+    <link rel="stylesheet" href="../static/assets/fonts/ionicons.min.css" />
+    <link
+      rel="stylesheet"
+      href="../static/assets/css/404-NOT-FOUND-animated.css"
+    />
+    <link rel="stylesheet" href="../static/assets/css/Footer-Dark.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../static/assets/css/PHP-Contact-Form-dark-1.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../static/assets/css/PHP-Contact-Form-dark.css"
+    />
+    <link rel="stylesheet" href="../static/assets/css/Simple-Slider.css" />
+    <link rel="stylesheet" href="../static/assets/css/styles.css" />
+    <link rel="stylesheet" href="../static/assets/css/Team-Grid.css" />
+  </head>
+
+  <body class="text-capitalize text-danger">
+    <div class="container-fluid">
+      <div class="row flex-column flex-sm-row wrapper min-vh-100">
+        <div
+          class="col-7 col-sm-1 col-md-3 flex-shrink-1 p-0 bg-dark"
+          style="background: #000 !important; /*width: 200px !important;*/"
+        >
+          <nav
+            class="
+              navbar navbar-dark navbar-expand-sm
+              bg-dark
+              text-nowrap
+              align-items-start
+              flex-sm-column
+            "
+            style="background: #000 !important"
+          >
+            <div class="container flex-sm-column">
+              <img
+                data-bs-toggle="tooltip"
+                src="../static/assets/img/grad.png"
+                title="Logo"
+                width="70px"
+                height="80px"
+              />
+              <div class="row" style="text-align: center">
+                <ul
+                  style="
+                    text-align: left;
+                    margin-top: 20px;
+                    font-family: Andika, sans-serif;
+                    width: 40%;
+                    position: relative;
+                    left: 10%;
+                  "
+                >
+                  <li style="list-style-type: none; padding-top: 5px">
+                    <a
+                      href="index.html"
+                      style="text-decoration: none; color: white"
+                      >Home</a
+                    >
+                  </li>
+                  <li style="list-style-type: none; padding-top: 15px">
+                    <a
+                      href="predict_now.html"
+                      style="
+                        text-decoration: none;
+                        color: white;
+                        list-style-type: none;
+                      "
+                      >Predict now</a
+                    >
+                  </li>
+
+                  <li style="list-style-type: none; padding-top: 15px">
+                    <a
+                      href="about.html"
+                      style="
+                        text-decoration: none;
+                        color: white;
+                        list-style-type: none;
+                      "
+                      >About Us</a
+                    >
+                  </li>
+                  <li style="list-style-type: none; padding-top: 15px">
+                    <a
+                      href="contact.html"
+                      style="
+                        text-decoration: none;
+                        color: white;
+                        list-style-type: none;
+                      "
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="col">
+          <div id="contact">
+            <div
+              class="container"
+              style="
+                font-family: Andika, sans-serif;
+                padding: 20px;
+                background: #000;
+              "
+            >
+              <div class="intro">
+                <h2 style="font-family: Andika, sans-serif">Contact Us</h2>
+                <p style="font-family: Andika, sans-serif">
+                  Feel free to reach out to us anytime
+                </p>
+              </div>
+              <form
+                id="contact-form"
+                action="../static/assets/php/contact.php"
+                method="post"
+              >
+                <div class="messages"></div>
+                <div class="controls">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group mb-3">
+                        <label
+                          class="form-label"
+                          for="form_name"
+                          style="color: rgb(13, 207, 207)"
+                          >FirstName*</label
+                        ><input
+                          class="form-control"
+                          type="text"
+                          id="form_name"
+                          data-error="Your First name"
+                          name="name"
+                          required=""
+                          placeholder="Your First name"
+                        />
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group mb-3">
+                        <label
+                          class="form-label"
+                          for="form_lastname"
+                          style="color: rgb(13, 207, 207)"
+                          >LastName*</label
+                        ><input
+                          class="form-control"
+                          type="text"
+                          id="form_lastname"
+                          data-error="Nachname erforderlich."
+                          name="lastname"
+                          required=""
+                          placeholder="Your Last Name"
+                        />
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group mb-3">
+                      <label
+                        class="form-label"
+                        for="form_email"
+                        style="color: rgb(13, 207, 207)"
+                        >E-Mail* </label
+                      ><input
+                        class="form-control"
+                        type="email"
+                        id="form_email"
+                        data-error="Vorname erforderlich."
+                        name="email"
+                        required=""
+                        placeholder="abc@gmail.com"
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group mb-3">
+                      <label
+                        class="form-label"
+                        for="form_phone"
+                        style="color: rgb(13, 207, 207)"
+                        >Phone number*</label
+                      ><input
+                        class="form-control"
+                        type="number"
+                        id="form_phone"
+                        data-error="Telefonnummer erforderlich"
+                        name="phone"
+                        placeholder="+91 xxxxxxxxxx"
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group mb-3">
+                      <label
+                        class="form-label"
+                        for="form_message"
+                        style="color: rgb(13, 207, 207)"
+                        >Message* </label
+                      ><input
+                        class="form-control"
+                        type="text"
+                        id="form_message"
+                        data-error="Nachricht erforderlich."
+                        rows="4"
+                        name="message"
+                        required=""
+                        placeholder="Message/ feedback/ concern"
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <button
+                      class="btn btn-success btn-send"
+                      value="Senden"
+                      type="submit"
+                    >
+                      Send
+                    </button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="border rounded footer-dark"
+      style="
+        background: black !important;
+        font-family: Andika, sans-serif;
+        height: 301px;
+        padding: 46px 0px;
+      "
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 item">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#">Masters Preparation</a></li>
+              <li><a href="#">Guidance</a></li>
+              <li><a href="#">Tips and Tricks</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3 item">
+            <h3>About</h3>
+            <ul>
+              <li><a href="#">Company</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 item text">
+            <h3>Team C5</h3>
+            <p class="text-lowercase">
+              We understand that students often get worried about their chances
+              of getting admission into Masters. And hence, we want to let them
+              predict their chances and plan accordingly.
+            </p>
+          </div>
+          <div class="col item social">
+            <a href="#"><i class="icon ion-social-facebook"></i></a
+            ><a href="#"><i class="icon ion-social-twitter"></i></a
+            ><a href="#"><i class="icon ion-social-snapchat"></i></a
+            ><a href="#"><i class="icon ion-social-instagram"></i></a>
+          </div>
+        </div>
+        <p class="copyright">Team C5 © 2021</p>
+      </div>
+    </footer>
+    <script src="../static/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+    <script src="../static/assets/js/PHP-Contact-Form-dark-1.js"></script>
+    <script src="../static/assets/js/PHP-Contact-Form-dark.js"></script>
+    <script src="../static/assets/js/Simple-Slider.js"></script>
+  </body>
+</html>
