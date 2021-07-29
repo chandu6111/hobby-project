@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Hobby project</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="../static/assets/img/favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="../static/assets/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Andika&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    />
+    <link rel="stylesheet" href="../static/assets/fonts/font-awesome.min.css" />
+    <link rel="stylesheet" href="../static/assets/fonts/ionicons.min.css" />
+    <link
+      rel="stylesheet"
+      href="../static/assets/css/404-NOT-FOUND-animated.css"
+    />
+    <link rel="stylesheet" href="../static/assets/css/Footer-Dark.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../static/assets/css/PHP-Contact-Form-dark-1.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../static/assets/css/PHP-Contact-Form-dark.css"
+    />
+    <link rel="stylesheet" href="../static/assets/css/Simple-Slider.css" />
+    <link rel="stylesheet" href="../static/assets/css/styles.css" />
+    <link rel="stylesheet" href="../static/assets/css/Team-Grid.css" />
+    <script language="Javascript">
+      function check(e, value) {
+        //Check Charater
+        var unicode = e.charCode ? e.charCode : e.keyCode;
+        if (value.indexOf(".") != -1) if (unicode == 46) return false;
+        if (unicode != 8)
+          if ((unicode < 48 || unicode > 57) && unicode != 46) return false;
+      }
+    </script>
+    <style>
+      body {
+        font-family: "Andika", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      /* style inputs and link buttons */
+      input,
+      .btn {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        margin: 5px 0;
+        opacity: 0.85;
+        display: inline-block;
+        font-size: 17px;
+        line-height: 20px;
+        text-decoration: none; /* remove underline from anchors */
+      }
+
+      input:hover,
+      .btn:hover {
+        opacity: 1;
+      }
+
+      /* style the submit button */
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+
+  <body class="text-capitalize text-danger">
+    <div class="container-fluid">
+      <div class="row flex-column flex-sm-row wrapper min-vh-100">
+        <div
+          class="col-7 col-sm-1 col-md-3 flex-shrink-1 p-0 bg-dark"
+          style="background: #000 !important; /*width: 200px !important;*/"
+        >
+          <nav
+            class="
+              navbar navbar-dark navbar-expand-sm
+              bg-dark
+              text-nowrap
+              align-items-start
+              flex-sm-column
+            "
+            style="background: #000 !important"
+          >
+            <div class="container flex-sm-column">
+              <img
+                data-bs-toggle="tooltip"
+                src="../static/assets/img/grad.png"
+                title="Logo"
+                width="70px"
+                height="80px"
+              />
+              <div class="row" style="text-align: center">
+                <ul
+                  style="
+                    text-align: left;
+                    margin-top: 20px;
+                    font-family: Andika, sans-serif;
+                    width: 40%;
+                    position: relative;
+                    left: 10%;
+                  "
+                >
+                  <li style="list-style-type: none; padding-top: 5px">
+                    <a
+                      href="index.html"
+                      style="text-decoration: none; color: white"
+                      >Home</a
+                    >
+                  </li>
+                  <li style="list-style-type: none; padding-top: 15px">
+                    <a
+                      href="predict_now.html"
+                      style="
+                        text-decoration: none;
+                        color: white;
+                        list-style-type: none;
+                      "
+                      >Predict now</a
+                    >
+                  </li>
+                  
+                  <li style="list-style-type: none; padding-top: 15px">
+                    <a
+                      href="about.html"
+                      style="
+                        text-decoration: none;
+                        color: white;
+                        list-style-type: none;
+                      "
+                      >About Us</a
+                    >
+                  </li>
+                  <li style="list-style-type: none; padding-top: 15px">
+                    <a
+                      href="contact.html"
+                      style="
+                        text-decoration: none;
+                        color: white;
+                        list-style-type: none;
+                      "
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div
+          class="col-12 col-sm-11 col-md-9 bg-light py-3"
+          style="border-color: var(--bs-pink)"
+        >
+          <div class="container">
+              <div class="row">
+                <marquee class="bottom-container"
+                  ><h2>
+                    Graduate Admission Prediction using Linear Regression
+                  </h2></marquee
+                >
+
+                <div class="col">
+                  <h3>Instructions for Input Features</h3>
+                  <ul>
+                    <li>GRE Score (out of 340)</li>
+                    <li>TOEFL Score (out of 120)</li>
+                    <li>University Rating (out of 5)</li>
+                    <li>Statment of Purpose {SOP} (out of 5)</li>
+                    <li>Letter of Recommendation {LOR} Strength (out of 5)</li>
+                    <li>Undergraduate CGPA (out of 10)</li>
+                    <li>Research Experience (Either 0 or 1)</li>
+                  </ul>
+                </div>
+
+                <div class="col">
+                    <form action="{{url_for('predict')}}" method="post">
+                  <input
+                    type="number"
+                    name="GRE Score"
+                    placeholder="GRE Score"
+                    required="required"
+                    min="0"
+                    max="340"
+                    style="border: 1px solid #000;"
+                  />
+                  <input
+                    type="number"
+                    name="TOEFL Score"
+                    placeholder="TOEFL Score"
+                    required="required"
+                    min="0"
+                    max="120"
+                    style="border: 1px solid #000;"
+                  />
+                  <input
+                    type="number"
+                    name="University Rating"
+                    placeholder="University Rating"
+                    required="required"
+                    min="1"
+                    max="5"
+                    style="border: 1px solid #000;"
+                  />
+                  <input
+                    type="number"
+                    name="SOP"
+                    placeholder="SOP"
+                    required="required"
+                    onkeypress="return check(event,value)"
+                    step="0.1"
+                    min="1"
+                    max="5"
+                    style="border: 1px solid #000;"
+                  />
+                  <input
+                    type="number"
+                    name="LOR"
+                    placeholder="LOR"
+                    required="required"
+                    onkeypress="return check(event,value)"
+                    step="0.1"
+                    min="1"
+                    max="5"
+                    style="border: 1px solid #000;"
+                  />
+                  <input
+                    type="number"
+                    name="CGPA"
+                    placeholder="CGPA"
+                    required="required"
+                    onkeypress="return check(event,value)"
+                    step="0.01"
+                    min="1"
+                    max="10"
+                    style="border: 1px solid #000;"
+                  />
+                  <input
+                    type="number"
+                    name="Research"
+                    placeholder="Research"
+                    required="required"
+                    min="0"
+                    max="1"
+                    style="border: 1px solid #000;"
+                  />
+
+                  <input type="submit" value="Predict" />
+                  
+                </div>
+              </div>
+            </form>
+            <h4 style="text-align: center; color: blue" style="border: 1px solid #000;">
+                {{prediction_text}}
+              </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="../static/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+    <script src="../static/assets/js/PHP-Contact-Form-dark-1.js"></script>
+    <script src="../static/assets/js/PHP-Contact-Form-dark.js"></script>
+    <script src="../static/assets/js/Simple-Slider.js"></script>
+  </body>
+</html>
